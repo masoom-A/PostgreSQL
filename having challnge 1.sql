@@ -1,0 +1,5 @@
+select customer_id, count(amount) from payment
+group by customer_id
+ having count(amount)>=40
+
+
